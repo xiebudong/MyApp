@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tips_bg_color"
+    android:orientation="vertical" >
+    
+  <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" 
+     android:gravity="center"
+      >
+      <TextView 
+	   android:id="@+id/tip_three_text"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:text="tip three"
+	   android:textColor="@android:color/white"
+	   android:textSize="25sp"
+	   />
+      
+  </LinearLayout>  
+        
+   	
+   	
+   	<ImageView    	    
+   	    android:id="@+id/tip_three_button_enter"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_gravity="center|bottom"
+   	    android:paddingBottom="150dp"
+   	    android:src="@drawable/selector_btn_bg_tip_enter"
+   	    />
+
+</FrameLayout>

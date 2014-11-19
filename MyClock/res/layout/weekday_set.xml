@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tips_bg_color"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_weekday_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn_weekday_set_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:clickable="false"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/selector_btn_back_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weekday_set_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/layout_weekday_set_title"
+            android:text="工作日设置"
+            android:textColor="@android:color/white"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/monday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weekday_bg"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="星期一"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/monday_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/selector_btn_weekday_selcect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tuesday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weekday_bg"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="星期二"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/tuesday_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/selector_btn_weekday_selcect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wednesday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weekday_bg"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="星期三"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/wednesday_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/selector_btn_weekday_selcect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thursday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weekday_bg"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="星期四"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/thursday_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/selector_btn_weekday_selcect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weekday_bg"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="星期五"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/friday_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/selector_btn_weekday_selcect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/saturday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weekday_bg"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="星期六"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/saturday_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/selector_btn_weekday_selcect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sunday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weekday_bg"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="星期日"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/sunday_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/selector_btn_weekday_selcect" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

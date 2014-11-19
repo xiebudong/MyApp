@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tips_bg_color">#a5cef8</color>
+    <color name="menu_interval_color">#d7d4d4</color>
+    <color name="menu_scrollbar_color">#b4b0b0</color>
+    <color name="menu_item_content_color">#e4e0e0</color>
+    <color name="birthday_clock_datepicker_bg_color">#c9f7f6</color>
+    <color name="bg_color">#f4f3e0</color>
+</resources>
