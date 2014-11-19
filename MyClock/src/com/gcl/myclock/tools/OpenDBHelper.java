@@ -107,12 +107,8 @@ public class OpenDBHelper extends SQLiteOpenHelper{
 		SQLiteDatabase writeDB = null;
 		readDB = getReadableDatabase();
 		writeDB = getWritableDatabase();
-		String[] selectArgs = {oldclock.mAddingTime,oldclock.mStatus,oldclock.mTime,oldclock.mLabel
-				,oldclock.mRepeat,oldclock.mMusic,oldclock.mVibrate,oldclock.mSleepTime};
-		Cursor cursor = readDB.query(DATABASE_TABLE_GETUP, null, (DATABASE_TABLE_GETUP_ADDING_TIME + "=? and " + DATABASE_TABLE_GETUP_STATUS + "=? and "
-				+ DATABASE_TABLE_GETUP_TIME + "=? and " + DATABASE_TABLE_GETUP_LABLE + "=? and " 
-				+ DATABASE_TABLE_GETUP_REPEAT + "=? and " + DATABASE_TABLE_GETUP_MUSIC + "=? and " 
-				+ DATABASE_TABLE_GETUP_VIBRATE + "=? and " + DATABASE_TABLE_GETUP_SLEEPTIME + "=?"), selectArgs, null, null, null);
+		String[] selectArgs = {oldclock.mAddingTime};
+		Cursor cursor = readDB.query(DATABASE_TABLE_GETUP, null, (DATABASE_TABLE_GETUP_ADDING_TIME + "=?"), selectArgs, null, null, null);
 		if(cursor != null){
 			String s = "update " + DATABASE_TABLE_GETUP + " set addingtime ='" + newclock.mAddingTime + "' and status='" + newclock.mStatus +"' and time='" + newclock.mTime + "' and label='" 
 					+ newclock.mLabel + "' and repeat='" + newclock.mRepeat + "' and music='" + newclock.mMusic + "' and vibrate='" 
@@ -210,13 +206,8 @@ public class OpenDBHelper extends SQLiteOpenHelper{
 		SQLiteDatabase writeDB = null;
 		readDB = getReadableDatabase();
 		writeDB = getWritableDatabase();
-		String[] selectArgs = {oldclock.mAddingTime,oldclock.mStatus,oldclock.mDay,oldclock.mTime,oldclock.mLabel
-				,oldclock.mMusic,oldclock.mVibrate};
-		Cursor cursor = readDB.query(DATABASE_TABLE_BIRTH, null, (DATABASE_TABLE_BIRTH_ADDING_TIME +"=? and " +
-				DATABASE_TABLE_BIRTH_STATUS + "=? and "
-				+ DATABASE_TABLE_BIRTH_DAY + "=? and " + DATABASE_TABLE_BIRTH_TIME + "=? and " 
-				+ DATABASE_TABLE_BIRTH_LABLE + "=? and " + DATABASE_TABLE_GETUP_MUSIC + "=? and " 
-				+ DATABASE_TABLE_GETUP_VIBRATE +  "=?"), selectArgs, null, null, null);
+		String[] selectArgs = {oldclock.mAddingTime};
+		Cursor cursor = readDB.query(DATABASE_TABLE_BIRTH, null, (DATABASE_TABLE_BIRTH_ADDING_TIME +"=?"), selectArgs, null, null, null);
 		if(cursor != null){
 			String s = "update " + DATABASE_TABLE_BIRTH + " set addingtime='" + newclock.mAddingTime + "' and status='" + newclock.mStatus +"' and day='" + newclock.mDay + "' and time='" 
 					+ newclock.mTime + "' and label='" + newclock.mLabel + "' and music='" + newclock.mMusic + "' and vibrate='" 
@@ -310,12 +301,8 @@ public class OpenDBHelper extends SQLiteOpenHelper{
 		SQLiteDatabase writeDB = null;
 		readDB = getReadableDatabase();
 		writeDB = getWritableDatabase();
-		String[] selectArgs = {oldclock.mStatus,oldclock.mTime,oldclock.mLabel
-				,oldclock.mMusic};
-		Cursor cursor = readDB.query(DATABASE_TABLE_INVERT, null, (DATABASE_TABLE_INVERT_ADDING_TIME + "=? and "
-				+ DATABASE_TABLE_INVERT_STATUS + "=? and "
-				+ DATABASE_TABLE_INVERT_TIME + "=? and " 
-				+ DATABASE_TABLE_INVERT_LABLE + "=? and " + DATABASE_TABLE_INVERT_MUSIC + "=?"), selectArgs, null, null, null);
+		String[] selectArgs = {oldclock.mAddingTime};
+		Cursor cursor = readDB.query(DATABASE_TABLE_INVERT, null, (DATABASE_TABLE_INVERT_ADDING_TIME + "=?"), selectArgs, null, null, null);
 		if(cursor != null){
 			String s = "update " + DATABASE_TABLE_INVERT + " set addingtime='" + newclock.mAddingTime + "' and status='" + newclock.mStatus + "' and time='" 
 					+ newclock.mTime + "' and label='" + newclock.mLabel + "' and music='" + newclock.mMusic 

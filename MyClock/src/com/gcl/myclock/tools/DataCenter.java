@@ -25,12 +25,9 @@ public class DataCenter {
 	
 	public void LoadAllClocks(){
 		List<Clock> allclocks = new ArrayList<Clock>();
-		List<GetUpClock> getupclocks = new ArrayList<GetUpClock>();
-		List<BirthClock> birthclocks = new ArrayList<BirthClock>();
-		List<InvertClock> invertclock = new ArrayList<InvertClock>();
-		getupclocks = mOpenDBHelper.loadAllGetUpClocks();
-		birthclocks = mOpenDBHelper.loadAllBirthClocks();
-		invertclock = mOpenDBHelper.loadAllInvertClocks();
+		List<GetUpClock> getupclocks = mOpenDBHelper.loadAllGetUpClocks();
+		List<BirthClock> birthclocks = mOpenDBHelper.loadAllBirthClocks();
+		List<InvertClock> invertclock = mOpenDBHelper.loadAllInvertClocks();
 		allclocks.addAll(getupclocks);
 		allclocks.addAll(birthclocks);
 		allclocks.addAll(invertclock);
